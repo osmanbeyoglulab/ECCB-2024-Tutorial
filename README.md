@@ -28,7 +28,7 @@
 
 
 ##  <a name='Hands-onTutorial'></a>Hands-on Tutorial
-####   <a name='Session1:Hands-onexperienceinapplyingtoolsandinterpretingresultsusingmultipleTFactivityinferencemethodsusingpublicscRNA-seq'></a><a href="https://github.com/osmanbeyoglulab/Tutorials-on-ISMB-2024/blob/main/hands-on_tutorial/session-1/before_start.ipynb">Hands-on experience in applying tools and interpreting results using multiple TF activity inference methods using public scRNA-seq</a>
+####   <a name='Session1:Hands-onexperienceinapplyingtoolsandinterpretingresultsusingmultipleTFactivityinferencemethodsusingpublicscRNA-seq'></a><a href="https://github.com/osmanbeyoglulab/ECCB-2024-Tutorial/blob/main/hands-on_tutorial/1.1-before_start.ipynb">Hands-on experience in applying tools and interpreting results using multiple TF activity inference methods using public scRNA-seq</a>
 
 
 ##  <a name='EnvironmentSetup'></a>Environment Setup
