@@ -7,14 +7,10 @@
 ##   <a name='TableofContents--omitintoc--'></a>Table of Contents<!-- omit in toc -->
 
 - [Overview](#overview)
-    - [Basic principles behind TF activity inference methods](#basic-principles-behind-tf-activity-inference-methods)
-    - [Overview of computational TF inference methods based on single cell omics](#overview-of-computational-tf-inference-methods-based-on-single-cell-omics)
 - [Hands-on Tutorial](#hands-on-tutorial)
 - [Environment Setup](#environment-setup)
   - [Installation of Conda](#installation-of-conda)
   - [Managing Environment](#managing-environment)
-
-- [Introduction](#introduction)
 - [Intended Audience and Level](#intended-audience-and-level)
 - [Schedule](#schedule)
 - [References](#References)
@@ -22,9 +18,11 @@
 
 
 ##  <a name='o=Overview'></a>Overview
-####   <a name='Basic principles behind TF activity inference methods'></a><a href="https://github.com/osmanbeyoglulab/Tutorials-on-ISMB-2024/blob/main/overview/ISMB 2024 Tutorial.pdf">Basic principles behind TF activity inference methods</a>
+Development of specialized cell types and their functions are controlled by external signals that initiate and propagate cell-type specific transcriptional programs. Activation or repression of genes by key combinations of transcription factors (TFs) drive these transcriptional programs and control cellular identity and functional state. For example, ectopic expression of the TF factors Oct4, Sox2, Klf4 and c-Myc are sufficient to reprogram fibroblasts into induced pluripotent stem cells. Conversely, disruption of TF activity can cause a broad range of diseases including cancer. Hence, identifying context-specific TFs is particularly relevant to human health and disease.
 
-####   <a name='Overview of computational TF inference methods based on single cell omics'></a><a href="https://github.com/osmanbeyoglulab/Tutorials-on-ISMB-2024/blob/main/overview/ISMB 2024 Tutorial.pdf">Overview of computational TF inference methods based on single cell omics</a>
+Systematically identifying key TFs for each cell-type represents a formidable challenge. Determination of TF activity in bulk tissue is confounded by cell-type heterogeneity. Single-cell technologies now measure different modalities from individual cells such as RNA, protein, and chromatin states. For example, recent technological breakthroughs have coupled the relatively sparse single cell RNA sequencing (scRNA-seq) signal with robust detection of highly abundant and well-characterized surface proteins using index sorting and barcoded antibodies such as cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq). But these approaches are limited to surface proteins, whereas TFs are intracellular. Single-cell sequencing assay for transposase-accessible chromatin (scATAC-seq) measures genome-wide chromatin accessibility and reveals cellular memory and response to stimuli or developmental decisions. Recently several computational methods have leveraged these omics datasets to systematically estimate TF activity influencing cell states. We will cover these TF activity inference methods using scRNA-seq, scATAC-seq, Multiome and CITE-seq data through hybrid lectures and hand-on-training sessions. We will cover the principles underlying these methods, their assumptions and trade-offs. We will apply multiple methods, interpret results and discuss strategies for further in silico validation. The audience will be equipped with practical knowledge, essential skills to conduct TF activity inference independently on their own datasets and interpret results.
+
+####   <a name='link to overview'></a><a href="https://github.com/osmanbeyoglulab/Tutorials-on-ISMB-2024/blob/main/overview/ISMB 2024 Tutorial.pdf">Overview of computational TF inference methods based on single cell omics</a>
 
 
 ##  <a name='Hands-onTutorial'></a>Hands-on Tutorial
@@ -77,10 +75,6 @@ After installing the required packages for the tutorial, launch JupyterLab and o
       Jupyter lab
 
 
-##  <a name='Background'></a>Introduction
-Development of specialized cell types and their functions are controlled by external signals that initiate and propagate cell-type specific transcriptional programs. Activation or repression of genes by key combinations of transcription factors (TFs) drive these transcriptional programs and control cellular identity and functional state. For example, ectopic expression of the TF factors Oct4, Sox2, Klf4 and c-Myc are sufficient to reprogram fibroblasts into induced pluripotent stem cells. Conversely, disruption of TF activity can cause a broad range of diseases including cancer. Hence, identifying context-specific TFs is particularly relevant to human health and disease.
-
-Systematically identifying key TFs for each cell-type represents a formidable challenge. Determination of TF activity in bulk tissue is confounded by cell-type heterogeneity. Single-cell technologies now measure different modalities from individual cells such as RNA, protein, and chromatin states. For example, recent technological breakthroughs have coupled the relatively sparse single cell RNA sequencing (scRNA-seq) signal with robust detection of highly abundant and well-characterized surface proteins using index sorting and barcoded antibodies such as cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq). But these approaches are limited to surface proteins, whereas TFs are intracellular. Single-cell sequencing assay for transposase-accessible chromatin (scATAC-seq) measures genome-wide chromatin accessibility and reveals cellular memory and response to stimuli or developmental decisions. Recently several computational methods have leveraged these omics datasets to systematically estimate TF activity influencing cell states. We will cover these TF activity inference methods using scRNA-seq, scATAC-seq, Multiome and CITE-seq data through hybrid lectures and hand-on-training sessions. We will cover the principles underlying these methods, their assumptions and trade-offs. We will apply multiple methods, interpret results and discuss strategies for further in silico validation. The audience will be equipped with practical knowledge, essential skills to conduct TF activity inference independently on their own datasets and interpret results.
 
 ## <a name='IntendedAudienceandLevel'></a>Intended Audience and Level
 This tutorial is designed for individuals at the beginner to intermediate level, specifically targeting bioinformaticians or computational biologists with some prior experience in analyzing single-cell RNA sequencing (scRNA-seq), single-cell assay for transposase-accessible chromatin sequencing (scATAC-seq), Cellular Indexing of Transcriptomes and Epitopes by Sequencing (CITE-seq), and Multiome data, or those familiar with next-generation sequencing (NGS) methods. A foundational understanding of basic statistics is assumed.
@@ -93,7 +87,7 @@ The tutorial will employ publicly accessible data, with examples showcased using
 
 
 ## <a name='Schedule'></a>Schedule
-Tuesday, September 17, 2024 9:00 – 12:00 PM EDT
+Tuesday, September 17, 2024 9:00 AM – 12:00 PM
 Time  | Tutorial
 -------|-------------------
 `9:00~10:30` | Welcome remarks and tutorial overview  <br /><br />Basic principles behind TF activity inference methods <br>  &nbsp; &nbsp; &nbsp;  * Overview of the importance of context-specific TF regulation in biological systems. <br> &nbsp;  &nbsp; &nbsp;  * Significance of TF dynamics in health and disease.<br> &nbsp;  &nbsp; &nbsp; * Single-cell multi-omics and spatial transcriptomics technologies for TF activity inference (scRNA-seq, scATAC-seq, Multiome and CITE-seq)<br /><br /> Overview of computational TF inference methods based on single cell omics <br /> 
